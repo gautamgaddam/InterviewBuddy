@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="google-site-verification" content="DyvLLz7l8LJsgEoI9wqf0Hvn-ewNI1p1TgnlipKXGRc" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InterviewBuddy™ | Online mock interviews with experts</title>
+    <meta name="description" content="InterviewBuddy™ offers live & on-demand virtual face-to-face mock interview with industry experts. Get constructive feedback and tips to improve.">
+    <meta name="keywords" content="mock interviews, virtual mock interviews, interview preparation, interview tips, interview buddy, interviewbuddy, video interview, tell me about yourself, online mock interviews, interview practice, interview questions">
+    <!-- ib style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/show-more.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <!-- <link href="css/animate.min.css" rel="stylesheet"> -->
+    <link rel="icon" href="images/InterviewBuddy_Profile.jpg" type="image/jpg" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84274835-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-84274835-2');
+    </script>
+    <script>
+        ! function(e, t, a, n, c, o, s) {
+            e.GoogleAnalyticsObject = c, e[c] = e[c] || function() {
+                (e[c].q = e[c].q || []).push(arguments)
+            }, e[c].l = 1 * new Date, o = t.createElement(a), s = t.getElementsByTagName(a)[0], o.async = 1, o.src = "https://www.google-analytics.com/analytics.js", s.parentNode.insertBefore(o, s)
+        }(window, document, "script", 0, "ga"), ga("create", "UA-84274835-2", "auto"), ga("send", "pageview")
+    </script>
+
+    <script type="text/javascript">
+        function sendEvent(eventName){
+            //send data to GA
+            ga('send', 'event', "Website", eventName, eventName);
+        }
+    </script>
+    <!-- End of GA -->
+
+    
+    
+    <!--sticky_header-->
+    <script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1) {
+            console.log('adding');
+            $('header').addClass("sticky");
+        } else {
+            console.log('remving');
+            $('header').removeClass("sticky");
+        }
+    });
+    </script>
+    <!-- start Mixpanel -->
+    <script type="text/javascript">
+    (function(e, a) {
+        if (!a.__SV) {
+            var b = window;
+            try {
+                var c, l, i, j = b.location,
+                    g = j.hash;
+                c = function(a, b) {
+                    return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null
+                };
+                g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)))
+            } catch (m) {}
+            var k, h;
+            window.mixpanel = a;
+            a._i = [];
+            a.init = function(b, c, f) {
+                function e(b, a) {
+                    var c = a.split(".");
+                    2 == c.length && (b = b[c[0]], a = c[1]);
+                    b[a] = function() {
+                        b.push([a].concat(Array.prototype.slice.call(arguments,
+                            0)))
+                    }
+                }
+                var d = a;
+                "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel";
+                d.people = d.people || [];
+                d.toString = function(b) {
+                    var a = "mixpanel";
+                    "mixpanel" !== f && (a += "." + f);
+                    b || (a += " (stub)");
+                    return a
+                };
+                d.people.toString = function() {
+                    return d.toString(1) + ".people (stub)"
+                };
+                k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                for (h = 0; h < k.length; h++) e(d, k[h]);
+                a._i.push([b, c, f])
+            };
+            a.__SV = 1.2;
+            b = e.createElement("script");
+            b.type = "text/javascript";
+            b.async = !0;
+            b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+            c = e.getElementsByTagName("script")[0];
+            c.parentNode.insertBefore(b, c)
+        }
+    })(document, window.mixpanel || []);
+    mixpanel.init("cbb62661ac2f1844aa4c80abb508091b");
+    </script>
+    <!-- end Mixpanel -->
+    <!-- heap analytics -->
+    <script type="text/javascript">
+    window.heap = window.heap || [], heap.load = function(e, t) {
+        window.heap.appid = e, window.heap.config = t = t || {};
+        var r = t.forceSSL || "https:" === document.location.protocol,
+            a = document.createElement("script");
+        a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+        var n = document.getElementsByTagName("script")[0];
+        n.parentNode.insertBefore(a, n);
+        for (var o = function(e) {
+                return function() {
+                    heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+    };
+    heap.load("3879766989");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '778404942311555');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=778404942311555&ev=PageView
+  &noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <div class="container" id="top">
+        <!---->
+    </div>
+    <nav id="menu" style="display:none;" class="menu">
+        <a href="">
+        </a>
+        <section class="menu-section">
+            <h3 class="menu-section-title"> </h3>
+            <ul class="menu-section-list">
+                <li><a href="index.html#About">ABOUT </a></li>
+                <li><a href="index.html#Why">ADVANTAGES OF MOCK INTERVIEWS</a></li>
+                <li><a href="index.html#Features">BENEFITS</a></li>
+                <li><a href="index.html#Started">HOW IT WORKS</a></li>
+                <li><a href="index.html#Pricing">PRICING</a></li>
+                <li><a href=offers.html>OFFERS</a></li>
+                <li><a href="index.html#App">ANDROID APP</a></li>
+                <li><a href="#Contact">CONTACT </a></li>
+            </ul>
+        </section>
+        <div class="m-links-b">
+            <div class='text-center socila_icons'>
+                <a target="_blank" href="https://www.facebook.com/intrvwbuddy"><img src='images/s1.png' width='30'></a>
+                <a target="_blank" href="https://www.instagram.com/intrvwbuddy"><img src='images/s2.png' width='30'></a>
+                <a target="_blank" href="https://www.twitter.com/intrvwbuddy"><img src='images/s3.png' width='30'></a>
+                <a target="_blank" href="https://plus.google.com/InterviewBuddyVisakhapatnam"><img src='images/s4.png' width='30'></a>
+                <a style="margin-top:5px;display: inline-block;" target="_blank" href="https://www.linkedin.com/company/interviewbuddy"><img src='images/s7.png' width='30'></a>
+            </div>
+            <hr>
+            <div style="clear:both;"></div>
+            <div class='row remove_row_margin'>
+                <div class='col-xs-4 text-center' id="square"><img src='images/video-chat.svg '></div>
+                <div class='col-xs-8'>
+                    <span id="target" style='color:white'></span>
+                    <span id="cursor" style='color:white'></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ib-loog logo-res" id=home>
+        <a href=/><img src=images/logo1.png></a>
+        <div class=alphaStyle>Alpha</div>
+    </div>
+    <div style=background-color:#fff>
+        <header class=panel-header id=menu_slide style=position:fixed!important;left:0;right:0>
+            <div class="ib-loog logo-res2" id=home>
+                <a href=/><img src=images/logo1.png></a>
+            </div>
+            <button class="btn-hamburger js-slideout-toggle" onclick="sendEvent('Website Menu')"></button>
+            <div class=container>
+                <div class="pull-right col-md-6 top-nav-m">
+                    <div class=tp-rgt-mnu><a href=/app/#/access/signin target=_blank onclick="sendEvent('Log In')">Log In</a> <a href=/app/#/access/signup/ target=_blank onclick="sendEvent('Sign Up')">Sign Up</a></div>
+                </div>
+            </div>
+            <img src="images/shadow-navigation.png" class="main-navigation__shadow_privacy" alt="" >
+        </header>
+    </div>
+
+
+    <main id="panel">
+        <section class="box">
+            <div class="container-fluid about_backgrd row">
+                <div class="col-sm-1"></div>
+                <div class="container col-sm-10 abtus_cntr slideanim animated" id='about' name='about' style="padding:0 10%;margin-top: 100px !important;">
+                    <h1 class=''>PRIVACY STATEMENT</h1>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h3>
+                    <p style="font-weight:600">When you transact in our store, we collect the personal information you give us such as your name, address and email address.</p>
+                    <p style="font-weight:600">When you browse our store, we also automatically receive your computer&rsquo;s internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system.</p>
+                    <p style="font-weight:600">Email marketing (if applicable): With your permission, we may send you emails about our store, new products and other updates.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 2 - CONSENT</h3>
+                    <p style="font-weight:600">How do you get my consent?</p>
+                    <p style="font-weight:600">When you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p>
+                    <p style="font-weight:600">If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no.</p>
+                    <p style="font-weight:600">How do I withdraw my consent?</p>
+                    <p style="font-weight:600">If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at legal@interviewbuddy.in or mailing us at: U&amp;U Connoisseurs India Private Limited #25-8-30, Near Reading Room, Main Road, Visakhapatnam, AP, 530001, India</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600;">SECTION 3 - DISCLOSURE</h3>
+                    <p style="font-weight:600">We may disclose your personal information if we are required by law to do so or if you violate our Terms of Service.</p>
+                    <br>                    
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 4 - INTERVIEWBUDDY</h3>
+                    <p style="font-weight:600">Our store is hosted on InterviewBuddy Inc. They provide us with the online e-commerce platform through which we transact with you.</p>
+                    <p style="font-weight:600">Your data is stored through InterviewBuddy&rsquo;s data storage, databases and the general InterviewBuddy application. They store your data on a secure server behind a firewall.</p>
+                    <br>
+                    <p style="text-align:center;font-weight:600;">Payment:</p>
+                    <p style="font-weight:600">If you choose a direct payment gateway to complete your purchase, then InterviewBuddy stores your credit card data. It is encrypted through the Payment Card Industry Data Security Standard (PCI-DSS). Your purchase transaction data is stored only as long as is necessary to complete your purchase transaction. After that is complete, your purchase transaction information is deleted.</p>
+                    <p style="font-weight:600">All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express and Discover.</p>
+                    <p style="font-weight:600">PCI-DSS requirements help ensure the secure handling of credit card information by our store and its service providers.</p>
+                    <p style="font-weight:600">For more insight, you may also want to read InterviewBuddy&rsquo;s Terms of Service here or Privacy Statement here.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 5 - THIRD-PARTY SERVICES</h3>
+                    <p style="font-weight:600">In general, the third-party providers used by us will only collect, use and disclose your information to the extent necessary to allow them to perform the services they provide to us.</p>
+                    <p style="font-weight:600">However, certain third-party service providers, such as payment gateways and other payment transaction processors, have their own privacy policies in respect to the information we are required to provide to them for your purchase-related transactions.</p>
+                    <p style="font-weight:600">For these providers, we recommend that you read their privacy policies so you can understand the manner in which your personal information will be handled by these providers.</p>
+                    <p style="font-weight:600">In particular, remember that certain providers may be located in or have facilities that are located in a different jurisdiction than either you or us. So if you elect to proceed with a transaction that involves the services of a third-party service provider, then your information may become subject to the laws of the jurisdiction(s) in which that service provider or its facilities are located.</p>
+                    <p style="font-weight:600">As an example, if you are located in India and your transaction is processed by a payment gateway located in the United States, then your personal information used in completing that transaction may be subject to disclosure under United States legislation, including the Patriot Act.</p>
+                    <p style="font-weight:600">Once you leave our store&rsquo;s website or are redirected to a third-party website or application, you are no longer governed by this Privacy Policy or our website&rsquo;s Terms of Service.</p>
+                    <br>
+                    <p style="text-align:center;font-weight:600;">Links</p>
+                    <p style="font-weight:600">When you click on links on our store, they may direct you away from our site. We are not responsible for the privacy practices of other sites and encourage you to read their privacy statements.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 6 - SECURITY</h3>
+                    <p style="font-weight:600">To protect your personal information, we take reasonable precautions and follow industry best practices to make sure it is not inadvertently lost, misused, accessed, disclosed, altered or destroyed.</p>
+                    <p style="font-weight:600">If you provide us with your credit card information, the information is encrypted using secure socket layer technology (SSL) and stored with a AES-256 encryption. Although no method of transmission over the Internet or electronic storage is 100% secure, we follow all PCI-DSS requirements and implement additional generally accepted industry standards.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 7 - AGE OF CONSENT</h3>
+                    <p style="font-weight:600">By using this site, you represent that you are at least the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 8 - CHANGES TO THIS PRIVACY POLICY</h3>
+                    <p style="font-weight:600">We reserve the right to modify this privacy policy at any time, so please review it frequently.</p>
+                    <p style="font-weight:600">Changes and clarifications will take effect immediately upon their posting on the website. If we make material changes to this policy, we will notify you here that it has been updated, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it.</p>
+                    <p style="font-weight:600">If our company is acquired or merged with another company, your information may be transferred to the new owners so that we may continue to sell products and/or services to you.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">QUESTIONS AND CONTACT INFORMATION</h3>
+                    <p style="font-weight:600">If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information, contact our Privacy Compliance Officer at legal@interviewbuddy.in or by mail at U&amp;U Connoisseurs India Private Limited</p>
+                    <p style="font-weight:600">[Re: Privacy Compliance Officer]</p>
+                    <p style="font-weight:600">[#25-8-30, Near Reading Room, Main Road, Visakhapatnam, AP, 530001, India]</p>
+                    <div class='pull-right'><img src='./images/boy.png'></div>
+                </div>
+            </div>
+            <footer id="Contact" class="fooStyle_2">
+                <div class="container">
+                    <div class="col-sm-5 fcol_1"> <i><a href="/"><img src="images/footer.png"></a></i>
+                        <div class="fcnt">Online face-to-face mock interviews with experts help you train & prepare for job interviews in a no pressure, stress-free environment simulating a real job interview. Stay ahead of the competition with expert mentoring & feedback!</div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-2"><img src="images/icon3.png" width="20" height="20" alt="" /></div>
+                                    <div class="col-xs-10 pcnt">
+                                        <p>Call Us
+                                        <h6>+91 8500 99 0101</h6>
+                                        <h6>Timings: 1 PM to 9 PM</h6>
+                                        <h6>(Tuesday to Sunday)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-2"><img src="images/icon1.png" alt="" /></div>
+                                    <div class="col-xs-10 pcnt">
+                                        <p>Email Us</p>
+                                        <h6>hello@interviewbuddy.in</h6>
+                                   	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fooStyleSicons" style="position:relative;z-index:100">
+                            <ul class="">
+                                <div class="res1"  style="margin-left:-40px;">
+                                    <li>
+                                        <a href="https://www.facebook.com/intrvwbuddy" target="_blank">
+                                            <div class="image1"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/intrvwbuddy" target="_blank">
+                                            <div class="image2"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com/intrvwbuddy" target="_blank">
+                                            <div class="image3"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/interviewbuddy" target="_blank">
+                                            <div class="image7"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://plus.google.com/108124705819353795285" target="_blank">
+                                            <div class="image4"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=lqRPBglcwIE&amp;feature=youtu.be" target="_blank">
+                                            <div class="image8"></div>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 col-sm-offset-1">
+                        <div class="usfl-links">
+                            <h1>Quick Links</h1>
+                            <div class="usfl-links-lits">
+                                <ul>
+                                    <!-- <li><i><img src="images/arow2.png" alt=""/></i><a href="our-story.html">Our Story</a></li> -->
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="index.html#Features">Features</a></li>
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="pricing.html">Pricing</a></li>
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="https://www.linkedin.com/company/interviewbuddy" target="_blank">Careers</a></li>
+                                    <li><i><img src=images/arow2.png alt=""></i><a href=offers.html>Offers</a></li>
+                                
+                                    <li><i><img src="images/arow2.png" alt=""/></i><a class="typeform-share link" href="https://interviewbuddy.typeform.com/to/Qautzo" data-mode="popup" target="_blank">Campus Ambassador</a>
+                                        
+                                        <!-- Type Form  -->
+                                        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm_share",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!gi.call(d,id)){js=ce.call(d,"script");js.id=id;js.src=b+"share.js";q=gt.call(d,"script")[0];q.parentNode.insertBefore(js,q)}})()</script>
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="https://medium.com/@interviewbuddy" target="_blank">Blog</a></li>
+                                    <li><i><img src="images/arow2.png" alt=""/></i><a href="pricing.html#FAQs">FAQs</a></li>
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="/help" target="_blank">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 form">
+                        <h1>Interview tips in your inbox</h1>
+                        <div class="fcnt" style="margin-bottom: 0px !important;">Handcrafted & curated material for every stage of career grooming & industry insights, delivered to your inbox once a month. No spam. Period.</div>
+                        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                        <style type="text/css">
+                        #mc_embed_signup {}
+                        </style>
+                        <div id="mc_embed_signup">
+                            <form action="//interviewbuddy.us13.list-manage.com/subscribe/post?u=2dcb58f07cb8a2f310039f3c4&amp;id=377dee5527" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group">
+                                        <input type="email" value="" name="EMAIL" class="txtStyle required email" id="mce-EMAIL" placeholder="Enter Your Email" style="margin-bottom: 0px !important;width: 100%; background: transparent; border-top: 0; border-left: 0; border-right: 0; border-bottom: 2px #9fa2a8 solid; font-size: 16px; padding-bottom: 5px; margin-bottom: 40px;border-radius: 0px;">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_2dcb58f07cb8a2f310039f3c4_377dee5527" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subStyle" style="width: 120px!important;border-radius: 50px !important;" onclick="sendEvent('Subscribe')">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                        <script type='text/javascript'>
+                        (function($) {
+                            window.fnames = new Array();
+                            window.ftypes = new Array();
+                            fnames[0] = 'EMAIL';
+                            ftypes[0] = 'email';
+                            fnames[1] = 'FNAME';
+                            ftypes[1] = 'text';
+                            fnames[2] = 'LNAME';
+                            ftypes[2] = 'text';
+                        }(jQuery));
+                        var $mcj = jQuery.noConflict(true);
+                        </script>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </footer>
+            <footer class="footerStyle3">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="col-sm-7">
+                            <div class="pull-left">© 2017 InterviewBuddy<sup>TM</sup> | InterviewBuddy is a trademark of U&U Connoisseurs India Private Limited</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class=" footerStyle3-links"> <a href="privacy.html">Privacy Policy</a> <a href="terms.html">T&amp;C</a></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class=" footerStyle3-links">
+                                <a href="https://heapanalytics.com/?utm_source=badge"><img style="width:80px;height:30px" src="images/badge.png" alt="Heap | Mobile and Web Analytics" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <footer class="footerStyle4 footclr" style="background:url(images/pattern.jpg);">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="" style="font-family: SIFONN_BASIC !important;text-transform: uppercase;text-align:center;">Carefully crafted with <span><span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span></span> on the east coast of India for students & job seekers &nbsp;&nbsp;</div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <a class=back-to-top style="cursor: pointer">Back to Top</a>
+    <script>
+    var amountScrolled = 300;
+    $(window).scroll(function() {
+        $(window).scrollTop() > amountScrolled ? $("a.back-to-top").fadeIn("slow") : $("a.back-to-top").fadeOut("slow")
+    }), $("a.back-to-top").click(function() {
+        return $("html, body").animate({
+            scrollTop: 0
+        }, 700), !1
+    })
+    </script>
+    <script src="js/slideout.js"></script>
+    <script>
+    window.onload = function() {
+        setTimeout(function() {
+            document.getElementById('menu').style.display = 'block';
+        }, 1000);
+        var slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'side': 'right'
+        });
+        var slideout_menu = new Slideout({
+            'panel': document.getElementById('menu_slide'),
+            'menu': document.getElementById('menu'),
+            'side': 'right'
+        });
+
+        document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+            slideout.toggle();
+            slideout_menu.toggle();
+        });
+
+        document.querySelector('.menu').addEventListener('click', function(eve) {
+            if (eve.target.nodeName === 'A') {
+                slideout.close();
+            }
+            if (eve.target.nodeName === 'A') {
+                slideout_menu.close();
+            }
+        });
+    };
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/example.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/578902300b466c856f95884a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
+<script>
+/*scroll effect*/
+$(window).scroll(function() {
+    $(".slideanim").each(function() {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 700) {
+            $(this).addClass("slideInUp");
+        }
+    });
+});
+
+$(window).scroll(function() {
+    $(".slideleft").each(function() {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 700) {
+            $(this).addClass("fadeInLeftBig");
+        }
+    });
+});
+$(window).scroll(function() {
+    $(".slideright").each(function() {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 700) {
+            $(this).addClass("fadeInRightBig");
+        }
+    });
+});
+$(window).scroll(function() {
+    $(".bounce1down").each(function() {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 700) {
+            $(this).addClass("bounceInDown");
+        }
+    });
+});
+$(window).scroll(function() {
+    $(".bounce1up").each(function() {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 700) {
+            $(this).addClass("bounceInUp");
+        }
+    });
+});
+$(window).scroll(function() {
+    $(".swing1").each(function() {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 700) {
+            $(this).addClass("swing");
+        }
+    });
+
+
+
+
+    $(".fadeInDown1").each(function() {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 700) {
+            $(this).addClass("fadeInDown");
+        }
+    });
+
+
+
+});
+</script>
+<!-- shake effect -->
+<script>
+$(function() {
+
+    var $square = $("#square"),
+        flag = 1;
+    var timer;
+    bounce();
+
+    function bounce() {
+        timer = setInterval(function() {
+            if (flag == 1) {
+                flag = -1;
+            } else {
+                flag = 1;
+            }
+            $square.animate({
+                top: "+=" + (flag * 10)
+            }, 500)
+        }, 500);
+    }
+
+    $square.hover(function() {
+        clearInterval(timer);
+    }, function() {
+        bounce();
+    });
+
+
+});
+</script>
+<!-- toggle effect -->
+<script>
+$(document).ready(function() {
+    $("#moreshownhide").hide();
+    $("#less").hide();
+    $("#more").click(function() {
+        $("#moreshownhide").show(1000);
+        $("#more").hide();
+        $("#less").show();
+    });
+    $("#less").click(function() {
+        $("#moreshownhide").hide(1000);
+        $("#more").show();
+        $("#less").hide();
+    });
+
+
+});
+</script>
+<!--tying effect-->
+<script>
+(function($) {
+    // writes the string
+    //
+    // @param jQuery $target
+    // @param String str
+    // @param Numeric cursor
+    // @param Numeric delay
+    // @param Function cb
+    // @return void
+    function typeString($target, str, cursor, delay, cb) {
+        $target.html(function(_, html) {
+            return html + str[cursor];
+        });
+
+        if (cursor < str.length - 1) {
+            setTimeout(function() {
+                typeString($target, str, cursor + 1, delay, cb);
+            }, delay);
+        } else {
+            cb();
+        }
+    }
+
+    // clears the string
+    //
+    // @param jQuery $target
+    // @param Numeric delay
+    // @param Function cb
+    // @return void
+    function deleteString($target, delay, cb) {
+        var length;
+
+        $target.html(function(_, html) {
+            length = html.length;
+            return html.substr(0, length - 1);
+        });
+
+        if (length > 1) {
+            setTimeout(function() {
+                deleteString($target, delay, cb);
+            }, delay);
+        } else {
+            cb();
+        }
+    }
+
+    // jQuery hook
+    $.fn.extend({
+        teletype: function(opts) {
+            var settings = $.extend({}, $.teletype.defaults, opts);
+
+            return $(this).each(function() {
+                (function loop($tar, idx) {
+                    // type
+                    typeString($tar, settings.text[idx], 0, settings.delay, function() {
+                        // delete
+                        setTimeout(function() {
+                            deleteString($tar, settings.delay, function() {
+                                loop($tar, (idx + 1) % settings.text.length);
+                            });
+                        }, settings.pause);
+                    });
+
+                }($(this), 0));
+            });
+        }
+    });
+
+    // plugin defaults  
+    $.extend({
+        teletype: {
+            defaults: {
+                delay: 100,
+                pause: 2000,
+                text: []
+            }
+        }
+    });
+}(jQuery))
+
+/*Type text whatever you want*/
+$('#target').teletype({
+    text: [
+        'Take the step now that your future self will thank you for. Sign up now!',
+        '#InterviewBuddy #HappyInterviewing'
+    ]
+});
+
+$('#cursor').teletype({
+    text: ['|', ' '],
+    delay: 0,
+    pause: 500
+});
+</script>
+<!--More less effect-->
+<script>
+/* 
+   $(function() {
+   var showTotalChar = 200, showChar = "More +", hideChar = "Less -";
+   $('.show1').each(function() {
+   var content = $(this).text();
+   if (content.length > showTotalChar) {
+   var con = content.substr(0, showTotalChar);
+   var hcon = content.substr(showTotalChar, content.length - showTotalChar);
+   var txt= con +  '<span class="dots">...</span><span class="morectnt"><span>' + hcon + '</span><div class="margtp"><a href="" class="showmoretxt ">' + showChar + '</a></div></span>';
+   $(this).html(txt);
+   }
+   });
+   $(".showmoretxt").click(function() {
+   if ($(this).hasClass("sample")) {
+   alert(1);
+   $('.show1').removeClass("dots");
+   $(this).removeClass("sample");
+   
+   
+   $(this).text(showChar);
+   } else {
+   alert(2);
+   $('.show1').removeClass("dots"); 
+   $(this).addClass("sample");
+   $(this).text(hideChar);
+   }
+   $(this).parent().prev().toggle(1350);
+   $(this).prev().toggle(1350);
+   
+   return false;
+   });
+   });
+   */
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 90; // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "More +";
+    var lesstext = "Less -";
+
+
+    $('.show1').each(function() {
+        var content = $(this).html();
+
+        if (content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink showmoretxt text-center">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function() {
+        if ($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle(2000);
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+
+/*faq effects*/
+
+
+
+
+var action = 'click';
+var speed = "500";
+
+
+//Document.Ready
+$(document).ready(function() {
+    //Question handler
+    $('li.q').on(action, function() {
+        //gets next element
+        //opens .a of selected question
+        $(this).next().slideToggle(speed)
+            //selects all other answers and slides up any open answer
+            .siblings('li.a').slideUp();
+
+        //Grab img from clicked question
+        var img = $(this).children('img');
+        //Remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+        //toggle rotate class
+        img.toggleClass('rotate');
+
+    }); //End on click
+
+
+
+
+});
+</script>
+<!-- anchor tag jump effect-->
+<script>
+$(document).ready(function() {
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 2000, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+    }, 2000, 'swing');
+});
+
+function loop() {
+    $('.bouncer').animate({
+        'top': '-40'
+    }, {
+        duration: 2000,
+        complete: function() {
+            $('.bouncer').animate({
+                top: 0
+            }, {
+                duration: 2000,
+                complete: loop
+            });
+        }
+    });
+}
+loop();
+</script>
+<script>
+var vid = document.getElementById("bgvid");
+
+function myFunctionvid() {
+    $('#bgvid')[0].pause();
+}
+</script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="google-site-verification" content="DyvLLz7l8LJsgEoI9wqf0Hvn-ewNI1p1TgnlipKXGRc" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InterviewBuddy™ | Online mock interviews with experts</title>
+    <meta name="description" content="InterviewBuddy™ offers live & on-demand virtual face-to-face mock interview with industry experts. Get constructive feedback and tips to improve.">
+    <meta name="keywords" content="mock interviews, virtual mock interviews, interview preparation, interview tips, interview buddy, interviewbuddy, video interview, tell me about yourself, online mock interviews, interview practice, interview questions">
+ 	<script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/show-more.css" rel="stylesheet">
+    <!-- <link href="css/animate.min.css" rel="stylesheet"> -->
+    <link rel="icon" href="images/InterviewBuddy_Profile.jpg" type="image/jpg" sizes="16x16">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84274835-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-84274835-2');
+    </script>
+    <script>
+        ! function(e, t, a, n, c, o, s) {
+            e.GoogleAnalyticsObject = c, e[c] = e[c] || function() {
+                (e[c].q = e[c].q || []).push(arguments)
+            }, e[c].l = 1 * new Date, o = t.createElement(a), s = t.getElementsByTagName(a)[0], o.async = 1, o.src = "https://www.google-analytics.com/analytics.js", s.parentNode.insertBefore(o, s)
+        }(window, document, "script", 0, "ga"), ga("create", "UA-84274835-2", "auto"), ga("send", "pageview")
+    </script>
+
+    <script type="text/javascript">
+        function sendEvent(eventName){
+            //send data to GA
+            ga('send', 'event', "Website", eventName, eventName);
+        }
+    </script>
+    <!-- End of GA -->
+
+        
+    <script>
+	    $(window).scroll(function() {
+	        $(this).scrollTop() > 1 ? $("header").addClass("sticky") : $("header").removeClass("sticky")
+	    })
+    </script>
+    
+    <!-- start Mixpanel -->
+    <script type="text/javascript">
+    (function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+    0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+    mixpanel.init("cbb62661ac2f1844aa4c80abb508091b");
+    </script>
+    <!-- end Mixpanel -->
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function(e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function(e) {
+                    return function() {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load("3879766989");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '778404942311555');
+        fbq('track', 'PageView');
+    </script>
+    <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=778404942311555&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <div class="container" id="top"></div>
+    <nav id="menu" style="display:none;" class="menu">
+        <a href=""> </a>
+        <section class="menu-section">
+            <h3 class="menu-section-title"></h3>
+            <ul class="menu-section-list">
+                <li><a href="index.html#About">ABOUT </a></li>
+                <li><a href="index.html#Why">ADVANTAGES OF MOCK INTERVIEWS</a></li>
+                <li><a href="index.html#Features">BENEFITS</a></li>
+                <li><a href="index.html#Started">HOW IT WORKS</a></li>
+                <li><a href="index.html#Pricing">PRICING</a></li>
+                <li><a href=offers.html>OFFERS</a></li>
+                <li><a href="index.html#App">ANDROID APP</a></li>
+                <li><a href="#Contact">CONTACT </a></li>
+            </ul>
+        </section>
+        <div class="m-links-b">
+            <div class='text-center socila_icons'>
+                <a target="_blank" href="https://www.facebook.com/intrvwbuddy"><img src='images/s1.png' width='30'></a>
+                <a target="_blank" href="https://www.instagram.com/intrvwbuddy"><img src='images/s2.png' width='30'></a>
+                <a target="_blank" href="https://www.twitter.com/intrvwbuddy"><img src='images/s3.png' width='30'></a>
+                <a target="_blank" href="https://plus.google.com/108124705819353795285"><img src='images/s4.png' width='30'></a>
+                <a style="margin-top:5px;display: inline-block;" target="_blank" href="https://www.linkedin.com/company/interviewbuddy"><img src='images/s7.png' width='30'></a>
+            </div>
+            <hr>
+            <div style="clear:both;"></div>
+            <div class='row remove_row_margin'>
+                <div class='col-xs-4 text-center' id="square"><img src='images/video-chat.svg '></div>
+                <div class='col-xs-8'> <span id="target" style='color:white'></span> <span id="cursor" style='color:white'></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ib-loog logo-res" id=home>
+	    <a href=/><img src=images/logo1.png></a>
+	    <div class=alphaStyle>Alpha</div>
+	</div>
+	<div style=background-color:#fff>
+	    <header class=panel-header id=menu_slide style=position:fixed!important;left:0;right:0>
+	        <div class="ib-loog logo-res2" id=home>
+	            <a href=/><img src=images/logo1.png></a>
+	        </div>
+	        <button class="btn-hamburger js-slideout-toggle" onclick="sendEvent('Website Menu')"></button>
+	        <div class=container>
+	            <div class="pull-right col-md-6 top-nav-m">
+	                <div class=tp-rgt-mnu><a href=/app/#/access/signin target=_blank onclick="sendEvent('Log In')">Log In</a> <a href=/app/#/access/signup/ target=_blank onclick="sendEvent('Sign Up')">Sign Up</a></div>
+	            </div>
+	        </div>
+            <img src="images/shadow-navigation.png" class="main-navigation__shadow_terms" alt="" >
+	    </header>
+	</div>
+
+
+    <main id="panel">
+        <section class="box">
+            <div class="container-fluid about_backgrd row">
+                <div class="col-sm-1"></div>
+                <div class="container col-sm-10 abtus_cntr slideanim animated" style="padding:0 10%;margin-top: 100px !important;" id='about' name='about' style='clear:both;'>
+                    <h1 class=''>TERMS OF USE</h1>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">Overview</h3>
+                    <p style="font-weight:600;">This website is operated by U&amp;U Connoisseurs India Private Limited. Throughout the site, the terms &ldquo;we&rdquo;, &ldquo;us&rdquo; and &ldquo;our&rdquo; refer to U&amp;U Connoisseurs India Private Limited. U&amp;U Connoisseurs India Private Limited offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
+                    <p style="font-weight:600;">By visiting our site and/ or purchasing something from us, you engage in our &ldquo;Service&rdquo; and agree to be bound by the following terms and conditions (&ldquo;Terms of Service&rdquo;, &ldquo;Terms&rdquo;), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content.</p>
+                    <p style="font-weight:600;">Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service.</p>
+                    <p style="font-weight:600;">Any new features or tools which are added to the current store shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change or replace any part of these Terms of Service by posting updates and/or changes to our website.</p>
+                    <p style="font-weight:600;">It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 1 - ONLINE STORE TERMS</h3>
+                    <p style="font-weight:600;">By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site.</p>
+                    <p style="font-weight:600;">You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright laws).</p>
+                    <p style="font-weight:600;">You must not transmit any worms or viruses or any code of a destructive nature.</p>
+                    <p style="font-weight:600;">A breach or violation of any of the Terms will result in an immediate termination of your Services.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 2 - GENERAL CONDITIONS</h3>
+                    <p style="font-weight:600;">We reserve the right to refuse service to anyone for any reason at any time.</p>
+                    <p style="font-weight:600;">You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks.</p>
+                    <p style="font-weight:600;">You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us.</p>
+                    <p style="font-weight:600;">The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION</h3>
+                    <p style="font-weight:600;">We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more accurate, more complete or more timely sources of information. Any reliance on the material on this site is at your own risk.</p>
+                    <p style="font-weight:600;">This site may contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only. We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on our site. You agree that it is your responsibility to monitor changes to our site.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES</h3>
+                    <p style="font-weight:600;">Prices for our products and/or services are subject to change without notice.</p>
+                    <p style="font-weight:600;">We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time.</p>
+                    <p style="font-weight:600;">We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 5 - PRODUCTS OR SERVICES (if applicable)</h3>
+                    <p style="font-weight:600;">The products and/or services offered may have limited quantities and are subject to return or exchange only according to our Return Policy.</p>
+                    <p style="font-weight:600;">We reserve the right, but are not obligated, to limit the sales of our products or services to any person, geographic region or jurisdiction. We may exercise this right on a case-by-case basis. We reserve the right to limit the quantities of any products or services that we offer. All descriptions of products or product pricing are subject to change at any time without notice, at the sole discretion of us. We reserve the right to discontinue any product or service at any time. Any offer for any product or service made on this site is void where prohibited.</p>
+                    <p style="font-weight:600;">The video recordings of candidates interview is owned by to U&amp;U Connoisseurs India Private Limited. The candidate/user agrees and authorises us for any future use of these videos. The candidate will have access to their video for a limited time only.</p>
+                    <p style="font-weight:600;">We do not warrant that the quality of any products, services, information, or other material purchased or obtained by you will meet your expectations, or that any errors in the Service will be corrected.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION</h3>
+                    <p style="font-weight:600;">We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or orders that use the same billing and/or shipping address. In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e-mail and/or billing address/phone number provided at the time the order was made. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers or distributors.</p>
+                    <p style="font-weight:600;">You agree to provide current, complete and accurate purchase and account information for all purchases made at our store. You agree to promptly update your account and other information, including your email address and credit card numbers and expiration dates, so that we can complete your transactions and contact you as needed.</p>
+                    <p style="font-weight:600;">For more detail, please review our Returns Policy.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 7 - OPTIONAL TOOLS</h3>
+                    <p style="font-weight:600;">We may provide you with access to third-party tools over which we neither monitor nor have any control nor input.</p>
+                    <p style="font-weight:600;">You acknowledge and agree that we provide access to such tools &rdquo;as is&rdquo; and &ldquo;as available&rdquo; without any warranties, representations or conditions of any kind and without any endorsement. We shall have no liability whatsoever arising from or relating to your use of optional third-party tools.</p>
+                    <p style="font-weight:600;">Any use by you of optional tools offered through the site is entirely at your own risk and discretion and you should ensure that you are familiar with and approve of the terms on which tools are provided by the relevant third-party provider(s).</p>
+                    <p style="font-weight:600;">We may also, in the future, offer new services and/or features through the website (including, the release of new tools and resources). Such new features and/or services shall also be subject to these Terms of Service.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 8 - THIRD-PARTY LINKS</h3>
+                    <p style="font-weight:600;">Certain content, products and services available via our service may include materials from third-parties.</p>
+                    <p style="font-weight:600;">Third-party links on this site may direct you to third-party websites that are not affiliated with us. We are not responsible for examining or evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any third-party materials or websites, or for any other materials, products, or services of third-parties.</p>
+                    <p style="font-weight:600;">We are not liable for any harm or damages related to the purchase or use of goods, services, resources, content, or any other transactions made in connection with any third-party websites. Please review carefully the third-party's policies and practices and make sure you understand them before you engage in any transaction.</p>
+                    <p style="font-weight:600;">Complaints, claims, concerns, or questions regarding third-party products should be directed to the third-party.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 9 - USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS</h3>
+                    <p style="font-weight:600;">If, at our request, you send certain specific submissions (for example contest entries) or without a request from us you send creative ideas, suggestions, proposals, plans, or other materials, whether online, by email, by postal mail, or otherwise (collectively, 'comments'), you agree that we may, at any time, without restriction, edit, copy, publish, distribute, translate and otherwise use in any medium any comments that you forward to us. We are and shall be under no obligation (1) to< maintain any comments in confidence; (2) to pay compensation for any comments; or (3) to respond to any comments.</p>
+                    <p style="font-weight:600;">We may, but have no obligation to, monitor, edit or remove content that we determine in our sole discretion are unlawful, offensive, threatening, libellous, defamatory, pornographic, obscene or otherwise objectionable or violates any party&rsquo;s intellectual property or these Terms of Service.</p>
+                    <p style="font-weight:600;">You agree that your comments will not violate any right of any third-party, including copyright, trademark, privacy, personality or other personal or proprietary right. You further agree that your comments will not contain libellous or otherwise unlawful, abusive or obscene material, or contain any computer virus or other malware that could in any way affect the operation of the Service or any related website. You may not use a false e-mail address, pretend to be someone other than yourself, or otherwise mislead us or third-parties as to the origin of any comments. You are solely responsible for any comments you make and their accuracy. We take no responsibility and assume no liability for any comments posted by you or any third-party.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 10 - PERSONAL INFORMATION</h3>
+                    <p style="font-weight:600;">Your submission of personal information through the store is governed by our Privacy Policy. To view our Privacy Policy, click here.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 11 - ERRORS, INACCURACIES AND OMISSIONS</h3>
+                    <p style="font-weight:600;">Occasionally there may be information on our site or in the Service that contains typographical errors, inaccuracies or omissions that may relate to product descriptions, pricing, promotions, offers, product shipping charges, transit times and availability. We reserve the right to correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information in the Service or on any related website is inaccurate at any time without prior notice (including after you have submitted your order).</p>
+                    <p style="font-weight:600;">We undertake no obligation to update, amend or clarify information in the Service or on any related website, including without limitation, pricing information, except as required by law. No specified update or refresh date applied in the Service or on any related website, should be taken to indicate that all information in the Service or on any related website has been modified or updated.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 12 - PROHIBITED USES</h3>
+                    <p style="font-weight:600;">In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the site or its content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Service or of any related website, other websites, or the Internet; (h) to collect or track the personal information of others; (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for any obscene or immoral purpose; or (k) to interfere with or circumvent the security features of the Service or any related website, other websites, or the Internet. We reserve the right to terminate your use of the Service or any related website for violating any of the prohibited uses.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY</h3>
+                    <p style="font-weight:600;">We are not an employment company or employment agency of any kind. We do not promise, recommend, or approve of any job offer, regardless whether it is permanent or on a contract basis. We only facilitate a common platform where freelancers offer their interviewing skills to assist clients to prepare for interviews. We are not a joint employer of any kind, and have no employment relationship with the freelancers, clients, and/or candidates.</p>
+                    <p style="font-weight:600;">We do not guarantee, represent or warrant that your use of our service will be uninterrupted, timely, secure or error-free.</p>
+                    <p style="font-weight:600;">We do not warrant that the results that may be obtained from the use of the service will be accurate or reliable.</p>
+                    <p style="font-weight:600;">You agree that from time to time we may remove the service for indefinite periods of time or cancel the service at any time, without notice to you.</p>
+                    <p style="font-weight:600;">You expressly agree that your use of, or inability to use, the service is at your sole risk. The service and all products and services delivered to you through the service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation, warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement.</p>
+                    <p style="font-weight:600;">In no case shall U&amp;U Connoisseurs India Private Limited, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the service or any products procured using the service, or for any other claim related in any way to your use of the service or any product, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of the service or any content (or product) posted, transmitted, or otherwise made available via the service, even if advised of their possibility. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, our liability shall be limited to the maximum extent permitted by law.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 14 - INDEMNIFICATION</h3>
+                    <p style="font-weight:600;">You agree to indemnify, defend and hold harmless U&amp;U Connoisseurs India Private Limited and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys&rsquo; fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your violation of any law< or the rights of a third-party.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 15 - SEVERABILITY</h3>
+                    <p style="font-weight:600;">In the event that any provision of these Terms of Service is determined to be unlawful, void or unenforceable, such provision shall nonetheless be enforceable to the fullest extent permitted by applicable law, and the unenforceable portion shall be deemed to be severed from these Terms of Service, such determination shall not affect the validity and enforceability of any other remaining provisions.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 16 - TERMINATION</h3>
+                    <p style="font-weight:600;">The obligations and liabilities of the parties incurred prior to the termination date shall survive the termination of this agreement for all purposes.</p>
+                    <p style="font-weight:600;">These Terms of Service are effective unless and until terminated by either you or us.</p>
+                    <p style="font-weight:600;">You may terminate these Terms of Service at any time by notifying us that you no longer wish to use our Services, or when you cease using our site.</p>
+                    <p style="font-weight:600;">If in our sole judgment you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service, we also may terminate this agreement at any time without notice and you will remain liable for all amounts due up to and including the date of termination; and/or accordingly may deny you access to our Services (or any part thereof).</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 17 - ENTIRE AGREEMENT</h3>
+                    <p style="font-weight:600;">The failure of us to exercise or enforce any right or provision of these Terms of Service shall not constitute a waiver of such right or provision.</p>
+                    <p style="font-weight:600;">These Terms of Service and any policies or operating rules posted by us on this site or in respect to The Service constitutes the entire agreement and understanding between you and us and govern your use of the Service, superseding any prior or contemporaneous agreements, communications and proposals, whether oral or written, between you and us (including, but not limited to, any prior versions of the Terms of Service).</p>
+                    <p style="font-weight:600;">Any ambiguities in the interpretation of these Terms of Service shall not be construed against the drafting party.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 18 - GOVERNING LAW</h3>
+                    <p style="font-weight:600;">These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of India</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 19 - CHANGES TO TERMS OF SERVICE</h3>
+                    <p style="font-weight:600;">You can review the most current version of the Terms of Service at any time at this page.</p>
+                    <p style="font-weight:600;">We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.</p>
+                    <br>
+                    <h3 style="text-align:center;font-family:JosefinSans-Regular;font-weight:600">SECTION 20 - CONTACT INFORMATION</h3>
+                    <p style="text-align:center;font-weight:600">Questions about the Terms of Service should be sent to us at legal@interviewbuddy.in</p>
+                    <div class='pull-right'><img src='./images/boy.png'></div>
+                </div>
+            </div>
+           <footer id="Contact" class="fooStyle_2">
+                <div class="container">
+                    <div class="col-sm-5 fcol_1"> <i><a href="/"><img src="images/footer.png"></a></i>
+                        <div class="fcnt">Online face-to-face mock interviews with experts help you train & prepare for job interviews in a no pressure, stress-free environment simulating a real job interview. Stay ahead of the competition with expert mentoring & feedback!</div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-2"><img src="images/icon3.png" width="20" height="20" alt="" /></div>
+                                    <div class="col-xs-10 pcnt">
+                                        <p>Call Us
+                                        <h6>+91 8500 99 0101</h6>
+                                        <h6>Timings: 1 PM to 9 PM</h6>
+                                        <h6>(Tuesday to Sunday)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-2"><img src="images/icon1.png" alt="" /></div>
+                                    <div class="col-xs-10 pcnt">
+                                        <p>Email Us</p>
+                                        <h6>hello@interviewbuddy.in</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fooStyleSicons" style="position:relative;z-index:100">
+                            <ul class="">
+                                <div class="res1" style="margin-left:-40px;">
+                                    <li>
+                                        <a href="https://www.facebook.com/intrvwbuddy" target="_blank">
+                                            <div class="image1"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/intrvwbuddy" target="_blank">
+                                            <div class="image2"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.twitter.com/intrvwbuddy" target="_blank">
+                                            <div class="image3"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/interviewbuddy" target="_blank">
+                                            <div class="image7"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://plus.google.com/108124705819353795285" target="_blank">
+                                            <div class="image4"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=lqRPBglcwIE&amp;feature=youtu.be" target="_blank">
+                                            <div class="image8"></div>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 col-sm-offset-1">
+                        <div class="usfl-links">
+                            <h1>Quick Links</h1>
+                            <div class="usfl-links-lits">
+                                <ul>
+                                    <!-- <li><i><img src="images/arow2.png" alt=""/></i><a href="our-story.html">Our Story</a></li> -->
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="index.html#Features">Features</a></li>
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="pricing.html">Pricing</a></li>
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="https://www.linkedin.com/company/interviewbuddy" target="_blank">Careers</a></li>
+                                    <li><i><img src=images/arow2.png alt=""></i><a href=offers.html>Offers</a></li>
+                                
+                                    <li><i><img src="images/arow2.png" alt=""/></i><a class="typeform-share link" href="https://interviewbuddy.typeform.com/to/Qautzo" data-mode="popup" target="_blank">Campus Ambassador</a>
+                                        
+                                        <!-- Type Form  -->
+                                        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm_share",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!gi.call(d,id)){js=ce.call(d,"script");js.id=id;js.src=b+"share.js";q=gt.call(d,"script")[0];q.parentNode.insertBefore(js,q)}})()</script>
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="https://medium.com/@interviewbuddy" target="_blank">Blog</a></li>
+                                    <li><i><img src="images/arow2.png" alt=""/></i><a href="pricing.html#FAQs">FAQs</a></li>
+                                    <li><i><img src="images/arow2.png"  alt=""/></i><a href="/help" target="_blank">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12 form">
+                        <h1>Interview tips in your inbox</h1>
+                        <div class="fcnt" style="margin-bottom: 0px !important;">Handcrafted & curated material for every stage of career grooming & industry insights, delivered to your inbox once a month. No spam. Period.</div>
+                        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                        <style type="text/css">
+                            #mc_embed_signup {}
+                        </style>
+                        <div id="mc_embed_signup">
+                            <form action="//interviewbuddy.us13.list-manage.com/subscribe/post?u=2dcb58f07cb8a2f310039f3c4&amp;id=377dee5527" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group">
+                                        <input type="email" value="" name="EMAIL" class="txtStyle required email" id="mce-EMAIL" placeholder="Enter Your Email" style="margin-bottom: 0px !important;width: 100%; background: transparent; border-top: 0; border-left: 0; border-right: 0; border-bottom: 2px #9fa2a8 solid; font-size: 16px; padding-bottom: 5px; margin-bottom: 40px;border-radius: 0px;">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_2dcb58f07cb8a2f310039f3c4_377dee5527" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subStyle" style="width: 120px!important;border-radius: 50px !important;" onclick="sendEvent('Subscribe')">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                        <script type='text/javascript'>
+                            (function($) {
+                                window.fnames = new Array();
+                                window.ftypes = new Array();
+                                fnames[0] = 'EMAIL';
+                                ftypes[0] = 'email';
+                                fnames[1] = 'FNAME';
+                                ftypes[1] = 'text';
+                                fnames[2] = 'LNAME';
+                                ftypes[2] = 'text';
+                            }(jQuery));
+                            var $mcj = jQuery.noConflict(true);
+                        </script>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </footer>
+            <footer class="footerStyle3">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="col-sm-7">
+                            <div class="pull-left">© 2017 InterviewBuddy<sup>TM</sup> | InterviewBuddy is a trademark of U&U Connoisseurs India Private Limited</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class=" footerStyle3-links"> <a href="privacy.html">Privacy Policy</a> <a href="terms.html">T&amp;C</a></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class=" footerStyle3-links">
+                                <a href="https://heapanalytics.com/?utm_source=badge"><img style="width:80px;height:30px" src="images/badge.png" alt="Heap | Mobile and Web Analytics" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <footer class="footerStyle4 footclr" style="background:url(images/pattern.jpg);">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="" style="font-family: SIFONN_BASIC !important;text-transform: uppercase;text-align:center;">Carefully crafted with <span><span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span></span> on the east coast of India for students & job seekers &nbsp;&nbsp;</div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <a class=back-to-top style="cursor: pointer">Back to Top</a>
+    <script>
+    var amountScrolled = 0;
+    $(window).scroll(function() {
+        $(window).scrollTop() > amountScrolled ? $("a.back-to-top").fadeIn("slow") : $("a.back-to-top").fadeOut("slow")
+    }), $("a.back-to-top").click(function() {
+        return $("html, body").animate({
+            scrollTop: 0
+        }, 700), !1
+    })
+    </script>
+    <script src="js/slideout.js"></script>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('menu').style.display = 'block';
+            }, 1000);
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'side': 'right'
+            });
+            var slideout_menu = new Slideout({
+                'panel': document.getElementById('menu_slide'),
+                'menu': document.getElementById('menu'),
+                'side': 'right'
+            });
+            document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+                slideout.toggle();
+                slideout_menu.toggle();
+            });
+            document.querySelector('.menu').addEventListener('click', function(eve) {
+                if (eve.target.nodeName === 'A') {
+                    slideout.close();
+                }
+                if (eve.target.nodeName === 'A') {
+                    slideout_menu.close();
+                }
+            });
+        };
+    </script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/example.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/578902300b466c856f95884a/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+</body>
+
+</html>
+<script>
+    $(window).scroll(function() {
+        $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 700) {
+                $(this).addClass("slideInUp");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $(".slideleft").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 700) {
+                $(this).addClass("fadeInLeftBig");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $(".slideright").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 700) {
+                $(this).addClass("fadeInRightBig");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $(".bounce1down").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 700) {
+                $(this).addClass("bounceInDown");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $(".bounce1up").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 700) {
+                $(this).addClass("bounceInUp");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $(".swing1").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 700) {
+                $(this).addClass("swing");
+            }
+        });
+        $(".fadeInDown1").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 700) {
+                $(this).addClass("fadeInDown");
+            }
+        });
+    });
+</script>
+<script>
+    $(function() {
+        var $square = $("#square"),
+            flag = 1;
+        var timer;
+        bounce();
+
+        function bounce() {
+            timer = setInterval(function() {
+                if (flag == 1) {
+                    flag = -1;
+                } else {
+                    flag = 1;
+                }
+                $square.animate({
+                    top: "+=" + (flag * 10)
+                }, 500)
+            }, 500);
+        }
+        $square.hover(function() {
+            clearInterval(timer);
+        }, function() {
+            bounce();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $("#moreshownhide").hide();
+        $("#less").hide();
+        $("#more").click(function() {
+            $("#moreshownhide").show(1000);
+            $("#more").hide();
+            $("#less").show();
+        });
+        $("#less").click(function() {
+            $("#moreshownhide").hide(1000);
+            $("#more").show();
+            $("#less").hide();
+        });
+    });
+</script>
+<script>
+    (function ($) {
+  function typeString($target, str, cursor, delay, cb) {
+    $target.html(function (_, html) {
+      return html + str[cursor];
+    });
+
+    if (cursor < str.length - 1) {
+      setTimeout(function () {
+        typeString($target, str, cursor + 1, delay, cb);
+      }, delay);
+    }
+    else {
+      cb();
+    }
+  }
+
+  // clears the string
+  //
+  // @param jQuery $target
+  // @param Numeric delay
+  // @param Function cb
+  // @return void
+  function deleteString($target, delay, cb) {
+    var length;
+
+    $target.html(function (_, html) {
+      length = html.length;
+      return html.substr(0, length - 1);
+    });
+
+    if (length > 1) {
+      setTimeout(function () {
+        deleteString($target, delay, cb);
+      }, delay);
+    }
+    else {
+      cb();
+    }
+  }
+
+  // jQuery hook
+  $.fn.extend({
+    teletype: function (opts) {
+      var settings = $.extend({}, $.teletype.defaults, opts);
+
+      return $(this).each(function () {
+        (function loop($tar, idx) {
+          // type
+          typeString($tar, settings.text[idx], 0, settings.delay, function () {
+            // delete
+            setTimeout(function () {
+              deleteString($tar, settings.delay, function () {
+                loop($tar, (idx + 1) % settings.text.length);
+              });
+            }, settings.pause);
+          });
+
+        }($(this), 0));
+      });
+    }
+  });
+
+  // plugin defaults  
+  $.extend({
+    teletype: {
+      defaults: {
+        delay: 100,
+        pause: 2000,
+        text: []
+      }
+    }
+  });
+}(jQuery))
+
+
+/*Type text whatever you want*/
+$('#target').teletype({
+  text: [
+    'Take the step now that your future self will thank you for. Sign up now!',
+    '#InterviewBuddy #HappyInterviewing'
+  ]
+});
+
+$('#cursor').teletype({
+  text: ['|', ' '],
+  delay: 0,
+  pause: 500
+});
+</script>
+<script>
+    $(document).ready(function() {
+        var showChar = 90;
+        var ellipsestext = "...";
+        var moretext = "More +";
+        var lesstext = "Less -";
+        $('.show1').each(function() {
+            var content = $(this).html();
+            if (content.length > showChar) {
+                var c = content.substr(0, showChar);
+                var h = content.substr(showChar, content.length - showChar);
+                var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink showmoretxt text-center">' + moretext + '</a></span>';
+                $(this).html(html);
+            }
+        });
+        $(".morelink").click(function() {
+            if ($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+            $(this).parent().prev().toggle(2000);
+            $(this).prev().toggle();
+            return false;
+        });
+    });
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function() {
+        $('li.q').on(action, function() {
+            $(this).next().slideToggle(speed).siblings('li.a').slideUp();
+            var img = $(this).children('img');
+            $('img').not(img).removeClass('rotate');
+            img.toggleClass('rotate');
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('html, body').stop().animate({
+            'scrollTop': 0
+        }, 2000, 'swing');
+    });
+
+    function loop() {
+        $('.bouncer').animate({
+            'top': '-40'
+        }, {
+            duration: 2000,
+            complete: function() {
+                $('.bouncer').animate({
+                    top: 0
+                }, {
+                    duration: 2000,
+                    complete: loop
+                });
+            }
+        });
+    }
+    loop();
+</script>
+</body>
+
+</html>
+
